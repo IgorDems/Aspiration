@@ -1,0 +1,256 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-28T11:33:19.564Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2122485200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.NavigationSteps.setupTest()"
+            }
+          }
+        ],
+        "line": 36,
+        "name": ": Verify that as a user,they can view our products,",
+        "description": "\tand prices by navigating from the home page \"https://aspiration.com/\" to the products page\n  via the �Spend \u0026 Save�",
+        "id": "login-to-\"aspiration.com\";:-verify-that-as-a-user-they-can-view-our-products-;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4591100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Browser is open",
+            "match": {
+              "location": "StepDefinitions.NavigationSteps.user_had_opened_the_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5188231500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User enters aspiration.com",
+            "match": {
+              "location": "StepDefinitions.NavigationSteps.user_put_aspiration_com_in_url_field()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 999900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Hits enter",
+            "match": {
+              "location": "StepDefinitions.NavigationSteps.clicked_enter_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 655007300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User have to see Aspiration home_page",
+            "match": {
+              "location": "StepDefinitions.NavigationSteps.user_have_to_see_aspiration_com_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2133279100,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User had navigated to Home_page",
+            "match": {
+              "location": "StepDefinitions.NavigationSteps.user_had_navigated_to_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3249377900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User clicked Spend\u0026Save link at the top of the home page",
+            "match": {
+              "location": "StepDefinitions.NavigationSteps.user_clicked_spend_save_link_at_the_top_of_the_home_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 194999700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User can see two card products, Aspiration and Aspiration_Plus",
+            "match": {
+              "location": "StepDefinitions.NavigationSteps.user_can_view_our_products_and_prices()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4582851000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User on Spend\u0026Save page",
+            "match": {
+              "location": "StepDefinitions.NavigationSteps.user_on_spend_save_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 315959500,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User clicked GetAspiration button",
+            "match": {
+              "location": "StepDefinitions.NavigationSteps.user_clicked_get_aspiration_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 129997500,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "A modal input field for an emailaddress are displayed",
+            "match": {
+              "location": "StepDefinitions.NavigationSteps.a_modal_input_field_for_an_emailaddress_are_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 43005800,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "A modal  sign_up button are displayed",
+            "match": {
+              "location": "StepDefinitions.NavigationSteps.a_modal_sign_up_button_are_displayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3749517700,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User on Spend\u0026Save page",
+            "match": {
+              "location": "StepDefinitions.NavigationSteps.user_on_spend_save_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 293998300,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User clicked GetAspirationPlus button",
+            "match": {
+              "location": "StepDefinitions.NavigationSteps.user_clicked_get_aspiration_plus_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 242999600,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "A modal with monthly and yearly plans are displayed",
+            "match": {
+              "location": "StepDefinitions.NavigationSteps.a_modal_with_monthly_and_yearly_plans_are_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 52004400,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Yearly radio option the is \"$71.88 paid once yearly\" and visible",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"$71.88 paid once yearly\"",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.NavigationSteps.yearly_radio_option_the_is_and_visible(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46001400,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Monthly radio option is \"$7.99 paid monthly\" and visible",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"$7.99 paid monthly\"",
+                  "offset": 24
+                }
+              ],
+              "location": "StepDefinitions.NavigationSteps.monthly_radio_option_is_and_visible(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeScenario"
+          },
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Login to \"aspiration.com\"",
+    "description": "",
+    "id": "login-to-\"aspiration.com\"",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/aspsmoke.feature",
+    "tags": [
+      {
+        "name": "@SmokeScenario",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

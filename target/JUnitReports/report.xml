@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="23.422">
+    <testcase classname="Login to &quot;aspiration.com&quot;" name=": Verify that as a user,they can view our products," time="23.137">
+        <system-out><![CDATA[Given Browser is open.......................................................passed
+When User enters aspiration.com.............................................passed
+And Hits enter..............................................................passed
+Then User have to see Aspiration home_page..................................passed
+Given User had navigated to Home_page.......................................passed
+When User clicked Spend&Save link at the top of the home page...............passed
+Then User can see two card products, Aspiration and Aspiration_Plus.........passed
+Given User on Spend&Save page...............................................passed
+When User clicked GetAspiration button......................................passed
+Then A modal input field for an emailaddress are displayed..................passed
+And A modal  sign_up button are displayed...................................passed
+Given User on Spend&Save page...............................................passed
+When User clicked GetAspirationPlus button..................................passed
+Then A modal with monthly and yearly plans are displayed....................passed
+And Yearly radio option the is "$71.88 paid once yearly" and visible........passed
+And Monthly radio option is "$7.99 paid monthly" and visible................passed
+]]></system-out>
+    </testcase>
+</testsuite>
