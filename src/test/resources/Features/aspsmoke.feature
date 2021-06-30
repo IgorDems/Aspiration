@@ -32,5 +32,5 @@ Scenario Outline:: Verify that as a user,they can view our products,
 	And  Yearly radio option the is <text1> and visible 
 	And  Monthly radio option is <text2> and visible 
 	Examples: 
-	|planname 					| text1                   | text2               |
-	|"getAspirationplus" | "$71.88 paid once yearly" | "$7.99 paid monthly"|
+	| text1                   | text2               |
+	| "$71.88 paid once yearly" | "$7.99 paid monthly"|

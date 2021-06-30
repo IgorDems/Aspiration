@@ -9,7 +9,6 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(features = "src/test/resources/Features", glue = {"StepDefinitions"}, monochrome = true, 
 plugin = {"pretty", "html:target/HtmlReports.html", "json:target/JSONReports/report.json","junit:target/JUnitReports/report.xml"},
 tags = "@SmokeTest"
-//plugin = {"pretty", "html:target/HtmlReports"}
 		)
 public class NavigationRunner {
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="23.422">
-    <testcase classname="Login to &quot;aspiration.com&quot;" name=": Verify that as a user,they can view our products," time="23.137">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="22.346">
+    <testcase classname="Login to &quot;aspiration.com&quot;" name=": Verify that as a user,they can view our products," time="21.985">
         <system-out><![CDATA[Given Browser is open.......................................................passed
 When User enters aspiration.com.............................................passed
 And Hits enter..............................................................passed

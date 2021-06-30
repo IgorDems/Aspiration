@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.cucumber.java.Before;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -105,7 +106,7 @@ public class NavigationSteps {
 		pp.AspirationModalEmail();
 	}
 
-	@Then("^A modal  sign_up button are displayed$")
+	@And("^A modal  sign_up button are displayed$")
 	public void a_modal_sign_up_button_are_displayed() {
 		pp = new ProductPage(driver);
 		pp.AspirationModalStart();

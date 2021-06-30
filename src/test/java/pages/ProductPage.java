@@ -12,8 +12,8 @@ public class ProductPage {
 	String prodpagetitle = "Cash Management Services - Investing & Retirement Planning | Aspiration";
 
 	By aspiretion_pic = By.xpath("//div[contains(@class,'card-original')]");
-	By aspiretion_pic2 = By.xpath("//div[contains(@class,'card-plus')]");
-	By aspiretionplus_pic = By.xpath("//div[contains(@class,'logo-original')]");
+	By aspiretionplus_pic = By.xpath("//div[contains(@class,'card-plus')]");
+//	By aspiretion_pic2 = By.xpath("//div[contains(@class,'logo-original')]");
 	By aspiretionplus_pic2 = By.xpath("//div[contains(@class,'logo-plus')]");
 
 	By aspiretion_but = By.xpath("//button[contains(@ng-click,'getOriginalPlan()')]");
@@ -42,9 +42,9 @@ public class ProductPage {
 
 	public void isTwoProdDisplayed() {
 		driver.findElement(aspiretion_pic).isDisplayed();
-		driver.findElement(aspiretion_pic2).isDisplayed();
+//		driver.findElement(aspiretion_pic2).isDisplayed();
 		driver.findElement(aspiretionplus_pic).isDisplayed();
-		driver.findElement(aspiretionplus_pic2).isDisplayed();
+//		driver.findElement(aspiretionplus_pic2).isDisplayed();
 	}
 
 	public void getAspiration() {
