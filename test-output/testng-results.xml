@@ -1,29 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-01T03:28:27 CDT" name="Default suite" finished-at="2021-07-01T03:31:01 CDT" duration-ms="153845">
+  <suite started-at="2021-07-02T03:26:06 CDT" name="CucumberJava by groups" finished-at="2021-07-02T03:27:40 CDT" duration-ms="94151">
     <groups>
+      <group name="test-group">
+        <method signature="TestApi.GetHeight()[pri:0, instance:REST_API.TestApi@1cbb87f3]" name="GetHeight" class="REST_API.TestApi"/>
+      </group> <!-- test-group -->
     </groups>
-    <test started-at="2021-07-01T03:28:27 CDT" name="Default test" finished-at="2021-07-01T03:31:01 CDT" duration-ms="153845">
+    <test started-at="2021-07-02T03:26:06 CDT" name="GRP-test-group" finished-at="2021-07-02T03:27:40 CDT" duration-ms="94151">
       <class name="REST_API.TestApi">
-        <test-method signature="peopleHeight()[pri:0, instance:REST_API.TestApi@5fd4f8f5]" started-at="2021-07-01T03:28:27 CDT" name="peopleHeight" finished-at="2021-07-01T03:28:27 CDT" duration-ms="12" status="PASS">
+        <test-method signature="GetHeight()[pri:0, instance:REST_API.TestApi@1cbb87f3]" started-at="2021-07-02T03:26:06 CDT" name="GetHeight" finished-at="2021-07-02T03:27:40 CDT" duration-ms="94104" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- peopleHeight -->
-        <test-method signature="peopleNameCount()[pri:0, instance:REST_API.TestApi@5fd4f8f5]" started-at="2021-07-01T03:28:27 CDT" name="peopleNameCount" finished-at="2021-07-01T03:30:59 CDT" duration-ms="151997" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- peopleNameCount -->
-        <test-method signature="successfulResponse()[pri:0, instance:REST_API.TestApi@5fd4f8f5]" started-at="2021-07-01T03:30:59 CDT" name="successfulResponse" finished-at="2021-07-01T03:31:01 CDT" duration-ms="1757" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- successfulResponse -->
-        <test-method signature="tenIndividuals()[pri:0, instance:REST_API.TestApi@5fd4f8f5]" started-at="2021-07-01T03:31:01 CDT" name="tenIndividuals" finished-at="2021-07-01T03:31:01 CDT" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tenIndividuals -->
+        </test-method> <!-- GetHeight -->
       </class> <!-- REST_API.TestApi -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- GRP-test-group -->
+  </suite> <!-- CucumberJava by groups -->
 </testng-results>
