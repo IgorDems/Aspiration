@@ -23,16 +23,9 @@ public class NavigationSteps {
 		System.out.println("Project path: " + syspath);
 		System.setProperty("webdriver.chrome.driver", syspath + "/src/test/resources/drivers/chromedriver.exe");
 		driver = new ChromeDriver();
-		
-		
-//		driver.manage().timeouts().implicitlyWait(10000, TimeUnit.MILLISECONDS);
-//		driver.manage().timeouts().pageLoadTimeout(10000, TimeUnit.MILLISECONDS);
-//		driver.manage().window().maximize();
+		driver.manage().window().maximize();
 
 	}
-
-//	HomePage hp = new HomePage(driver);
-//	ProductPage pp = new ProductPage(driver);
 	
 	@Given("Browser is open")
 	public void user_had_opened_the_chrome_browser() {
@@ -42,11 +35,8 @@ public class NavigationSteps {
 	@When("User enters aspiration.com")
 	public void user_put_aspiration_com_in_url_field() {
 		 hp = new HomePage(driver);
-		
-		System.out.println("===========================================");
-//		driver.navigate().to("http://google.com");
 		hp.goToHomePage();
-		System.out.println("-------------------------------------------");
+		
 	}
 
 	@When("Hits enter")
@@ -60,8 +50,7 @@ public class NavigationSteps {
 		System.out.println("User have to see aspiration.com home page");
 		hp.isHomePage();
 	}
-
-//////////////////////////////////////////////////////////////////////////////////////	
+	
 	@Given("User had navigated to Home_page")
 	public void user_had_navigated_to_home_page() {
 		hp = new HomePage(driver);

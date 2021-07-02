@@ -16,7 +16,7 @@ public class HomePage {
 	String homepage = "https://www.aspiration.com/";
 	String hometitle = "Aspiration | Green Financial Services";
 
-	By spandsave = By.xpath("//*[@id=\"__next\"]/header/ul[1]/li[1]/a");
+	By spandsave = By.xpath("//a[text()='Spend & Save']");
 	
 	public HomePage(WebDriver driver) {
 		this.driver = driver;	
@@ -41,10 +41,5 @@ public class HomePage {
 		driver.findElement(spandsave).click();
 	}
 	
-//	@Test
-//	public void testHome() {
-//		goToHomePage();
-//		isHomePage();
-//		goToProduct();
-//	}
+
 }

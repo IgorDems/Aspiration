@@ -13,7 +13,7 @@ public class ProductPage {
 
 	By aspiretion_pic = By.xpath("//div[contains(@class,'card-original')]");
 	By aspiretionplus_pic = By.xpath("//div[contains(@class,'card-plus')]");
-//	By aspiretion_pic2 = By.xpath("//div[contains(@class,'logo-original')]");
+
 	By aspiretionplus_pic2 = By.xpath("//div[contains(@class,'logo-plus')]");
 
 	By aspiretion_but = By.xpath("//button[contains(@ng-click,'getOriginalPlan()')]");
@@ -25,15 +25,14 @@ public class ProductPage {
 	By modalasp_year = By.xpath("//*[contains(text(),'Yearly')]");
 	By modalasp_month = By.xpath("//*[contains(text(),'Monthly')]");
 
-	By modalasp_text_year = By.xpath("/html/body/div[1]/div/div/div/div[2]/div[1]/p");
-	By modalasp_text_month = By.xpath("/html/body/div[1]/div/div/div/div[2]/div[2]/p");
+	By modalasp_text_year = By.xpath("//p/b[text()='$71.88']//parent::p");
+	By modalasp_text_month = By.xpath("//p/b[text()='$7.99']//parent::p");
+	
 
 	public ProductPage(WebDriver driver) {
 		this.driver = driver;
 	}
-//	public ProductPage() {
-//		
-//	}
+
 
 	public void isProdPage() {
 		String title = driver.getTitle();
@@ -42,9 +41,7 @@ public class ProductPage {
 
 	public void isTwoProdDisplayed() {
 		driver.findElement(aspiretion_pic).isDisplayed();
-//		driver.findElement(aspiretion_pic2).isDisplayed();
 		driver.findElement(aspiretionplus_pic).isDisplayed();
-//		driver.findElement(aspiretionplus_pic2).isDisplayed();
 	}
 
 	public void getAspiration() {
