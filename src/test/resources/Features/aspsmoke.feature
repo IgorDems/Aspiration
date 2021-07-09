@@ -8,8 +8,7 @@ Scenario Outline:: Verify that as a user,they can view our products,
   via the “Spend & Save”
 
 	Given Browser is open 
-	When User enters aspiration.com 
-	And  Hits enter 
+	When User enters aspiration.com and hits enter 
 	Then User have to see Aspiration home_page 
 	
 	
@@ -23,7 +22,7 @@ Scenario Outline:: Verify that as a user,they can view our products,
 	Given  User on Spend&Save page 
 	When   User clicked GetAspiration button
 	Then  A modal input field for an emailaddress are displayed
-	And   A modal  sign_up button are displayed 
+	And   A modal sign_up button are displayed 
 
 	
 	Given  User on Spend&Save page 

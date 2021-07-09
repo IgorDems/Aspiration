@@ -1,15 +1,12 @@
 package pages;
 
-import static org.junit.Assert.assertEquals;
-
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.By;
 
 public class ProductPage {
 	WebDriver driver;
 
-	String prodpagetitle = "Cash Management Services - Investing & Retirement Planning | Aspiration";
+	public String prodpagetitle = "Cash Management Services - Investing & Retirement Planning | Aspiration";
 
 	By aspiretion_pic = By.xpath("//div[contains(@class,'card-original')]");
 	By aspiretionplus_pic = By.xpath("//div[contains(@class,'card-plus')]");
@@ -28,15 +25,13 @@ public class ProductPage {
 	By modalasp_text_year = By.xpath("//p/b[text()='$71.88']//parent::p");
 	By modalasp_text_month = By.xpath("//p/b[text()='$7.99']//parent::p");
 	
-
 	public ProductPage(WebDriver driver) {
 		this.driver = driver;
 	}
 
-
-	public void isProdPage() {
+	public String isProdPage() {
 		String title = driver.getTitle();
-		assertEquals(prodpagetitle, title);
+		return title;
 	}
 
 	public void isTwoProdDisplayed() {
@@ -62,21 +57,18 @@ public class ProductPage {
 
 	public void modalAspirationPlusHere() {
 		driver.findElement(modalasp_year).isDisplayed();
-		System.out.println("A modal with yearly text: "+driver.findElement(modalasp_year).getText());
 		driver.findElement(modalasp_month).isDisplayed();
-		System.out.println("A modal with monthly text: "+driver.findElement(modalasp_month).getText());
 	}
 
-	public void modalAspPlusYearText(String year_price) {
+	public String modalAspPlusYearText() {
 		String text1 = driver.findElement(modalasp_text_year).getText();
-		System.out.println("A modal radio option yearly text: "+driver.findElement(modalasp_text_year).getText());
-		assertEquals("$71.88 paid once yearly", text1);
+		return text1;
+		
 	}
 
-	public void modalAspPlusMonthText(String month_price) {
+	public String modalAspPlusMonthText() {
 		String text2 = driver.findElement(modalasp_text_month).getText();
-		System.out.println("A modal radio option monthly text: "+driver.findElement(modalasp_text_month).getText());
-		assertEquals("$7.99 paid monthly", text2);
+		return text2;
 	}
 
 }
